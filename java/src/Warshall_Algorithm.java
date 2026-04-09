@@ -9,7 +9,7 @@ public class Warshall_Algorithm {
 
         int[][] a = new int[10][20];
 
-        // input matrix
+
         for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
                 a[i][j] = sc.nextInt();
@@ -19,7 +19,7 @@ public class Warshall_Algorithm {
         int a1 = sc.nextInt();
         int b = sc.nextInt();
 
-        // Warshall Algorithm
+
         for(int k = 0; k < n; k++){
             for(int i = 0; i < n; i++){
                 for(int j = 0; j < n; j++){
@@ -29,14 +29,14 @@ public class Warshall_Algorithm {
             }
         }
 
-        // print matrix (same as your code)
+
         for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
                 System.out.print(a[i][j] + " ");
             }
         }
 
-        // path checking
+
         if(a[a1][b] == 1){
             System.out.print("Path Exists");
         }
